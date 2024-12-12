@@ -41,7 +41,9 @@ body {
   list-style: none;
   outline: none;
 }
-.add, .edit, .delete {
+.add, 
+.edit, 
+.delete {
   background: none;
   border: 0px;
   color: #888;
@@ -92,7 +94,9 @@ body {
 }
 
 /* Task list */
-.incomplete-tasks-item, .edit-mode, .completed-tasks-item {
+.incomplete-tasks-item, 
+.edit-mode, 
+.completed-tasks-item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;

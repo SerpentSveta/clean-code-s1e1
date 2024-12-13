@@ -17,6 +17,13 @@ body {
   display: block;
   text-align: right;
 }
+
+.header__title {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
 .header img {
   width: 100%;
 }

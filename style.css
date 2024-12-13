@@ -20,7 +20,7 @@ body {
 .header img {
   width: 100%;
 }
-.header .more-info {
+.header__link {
   font-family: fantasy, cursive;
 }
 
@@ -39,11 +39,11 @@ body {
   display: inline-block;
   flex-grow: 1;
 }
-.task-row-wrapper {
+.add__wrapper {
   display: flex;
 }
 
-.add, 
+.add__button, 
 .edit, 
 .delete {
   background: none;
@@ -54,14 +54,13 @@ body {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-.add:hover,
+.add__button:hover,
 .edit:hover,
 .delete:hover {
   color: #3a3a3a;
 }
 /* Heading */
-.title,
-.new-task-label {
+.title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -87,7 +86,7 @@ body {
 }
 
 /* New Task */
-.new-task-label {
+.add__title {
   display: block;
   margin: 0 0 20px;
 }
@@ -96,9 +95,8 @@ body {
 }
 
 /* Task list */
-.incomplete-tasks-item, 
-.edit-mode, 
-.completed-tasks-item {
+.incomplete-tasks__item,
+.completed-tasks__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -107,28 +105,24 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.incomplete-tasks-item > *,
-.edit-mode > *,
-.completed-tasks-item > * {
+.incomplete-tasks__item > *,
+.completed-tasks__item > * {
   vertical-align: middle;
 }
 
-.incomplete-tasks-item > input[type="checkbox"],
-.edit-mode > input[type="checkbox"],
-.completed-tasks-item > input[type="checkbox"] {
+.incomplete-tasks__item > input[type="checkbox"],
+.completed-tasks__item > input[type="checkbox"] {
   margin: 0 10px;
 }
-.incomplete-tasks-item > label,
-.edit-mode > label,
-.completed-tasks-item > label {
+.incomplete-tasks__item > label,
+.completed-tasks__item > label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-.incomplete-tasks-item > input[type="text"],
-.edit-mode > input[type="text"],
-.completed-tasks-item > input[type="text"] {
+.incomplete-tasks__item > input[type="text"],
+.completed-tasks__item > input[type="text"] {
   width: 226px;
 }
 .delete img {
@@ -147,16 +141,16 @@ body {
 }
 
 /* Edit Task */
-.incomplete-tasks-item input[type=text],
-.completed-tasks-item input[type=text] {
+.incomplete-tasks__item input[type=text],
+.completed-tasks__item input[type=text] {
   display: none;
 }
 
-.edit-mode input[type=text] {
+.incomplete-tasks__item_edit input[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode label {
+.incomplete-tasks__item_edit label {
   display: none;
 }
